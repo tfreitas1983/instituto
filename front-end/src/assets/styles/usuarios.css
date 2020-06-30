@@ -1,0 +1,141 @@
+@media screen and (min-width: 320px){
+    input {
+        width: 15rem;        
+    }
+    select{
+        width: 15rem;
+    }
+    form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;    
+        width: 100vw; 
+    }    
+    .title {
+        display: grid;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #1a0920;
+        width: 100%;
+    }
+    .avatar {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .avatar img {
+        height: 150px;
+        border-radius: 50%;    
+    }
+    .grupo {
+        display: flex;
+        position: relative;   
+        justify-self: center;
+        align-self: center;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    select {
+        background: rgba(0, 0, 0, 0.1);
+        border: 0;
+        border-radius: 4px;
+        height: 44px;
+        padding: 0 15px;
+        color: #fff;
+        margin: 0 0 10px;   
+        width: 17rem;
+    }
+    option {
+        background: #7159c1;
+        color: #fff;
+        margin: 0 0 10px;
+        font-size: 14px;    
+    }
+}
+
+@media screen and (min-width: 440px){
+    form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;    
+        width: 100vw; 
+    }
+    
+    .title {
+        display: grid;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #1a0920;
+        width: 100%;
+    }
+
+    .avatar {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .avatar img {
+        height: 150px;
+        border-radius: 50%;
+    
+    }
+
+    .grupo {
+        display: flex;
+        position: relative;   
+        justify-self: center;
+        align-self: center;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+
+
+    input {
+        background: rgba(0, 0, 0, 0.1);
+        border: 0;
+        border-radius: 4px;
+        height: 44px;
+        padding: 0;
+        color: #fff;
+        margin: 0 0 10px;
+        width: 25rem; 
+    }
+
+    input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    select{
+        background: rgba(0, 0, 0, 0.1);
+        border: 0;
+        border-radius: 4px;
+        height: 44px;
+        padding: 0 15px;
+        color: #fff;
+        margin: 0 0 10px;   
+        width: 25rem;
+    }
+
+    option {
+        background: #7159c1;
+        color: #fff;
+        margin: 0 0 10px;
+        font-size: 16px;    
+    }
+
+    button:hover {
+        background: #3f0b4e;
+        opacity: 1;
+    }
+
+}

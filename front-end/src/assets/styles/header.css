@@ -1,0 +1,94 @@
+    #nav {    
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ccc; 
+        border-top: 1px solid #ccc;    
+        width: 100vw;  
+        top: 0;  
+    }
+
+    #nav a {
+        float: left; 
+        padding: 15px 15px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #069;
+        border-right: 1px solid #ccc; 
+    }
+
+    .sessao {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        width: auto;          
+    }
+
+    .sessao img {
+        margin: 1px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid blueviolet;
+    }
+
+    .dropdown, .dropbtn-menu {
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #ccc;    
+    }
+
+    .dropdown .dropbtn  {
+        font-size: 14px;   
+        outline: none;
+        color: #069;
+        border-radius: 0px;
+        padding: 15px 8px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    .dropbtn-menu {
+        outline: none;
+        color: #069;
+        border-radius: 0px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    #nav a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(29, 53, 97);
+        color: #f2f2f2;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f2f2f2;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;    
+    }
+
+    .dropdown-content-menu {
+        display: none;
+        position: absolute;       
+        background-color: #f2f2f2;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1; 
+        top: 50px;   
+        right: 0px;        
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content-menu{
+        display: block;
+    }
