@@ -35,7 +35,7 @@ export default class Login extends Component {
 
         <img src={logo} alt="Instituto Embelleze" />
 
-        <input name="email" type="email" placeholder="Seu e-mail" autoComplete="off" />
+        <input name="email" type="email" autoFocus placeholder="Seu e-mail" autoComplete="off" />
         <input
           name="password"
           type="password"

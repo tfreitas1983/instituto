@@ -1,0 +1,53 @@
+.corpo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;    
+    width: 100vw; 
+}
+
+textarea {
+    height: 120px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 4px;    
+    color:rgba(255, 255, 255, 0.7);
+    margin: 0 0 0 10px;
+}
+
+input::text {
+    padding-left: 15px;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;        
+}
+.col-6 {
+    display: grid;
+    position: relative;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: grid;
+    position: relative;
+    justify-content: stretch;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 50rem;
+    margin-left: 5rem;   
+}
+
+.unidade {
+    height: 70px;    
+}

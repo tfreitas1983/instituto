@@ -46,8 +46,8 @@ export default class Header extends Component {
                      <Link to={"/relatorios"}> Relatórios </Link>
                     </div>                    
                                      
-                    <div className="sessao">                        
-                        <img src={avatar} alt="avatar" />
+                    <div className="sessao">
+                        <img src={avatar} alt="avatar" />                         
                         <div className="dropdown">
                             <div className="dropbtn-menu">                                
                                 <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
@@ -59,8 +59,9 @@ export default class Header extends Component {
                             <div className="dropdown-content-menu">
                                 <span> <Link to={"/perfil"}> Meu perfil </Link> </span>
                                 <span> <Link to={"/sair"}> Sair </Link> </span>                            
-                            </div>
-                        </div>                        
+                            </div>                            
+                        </div>   
+                                             
                     </div>                  
                 </div>
            

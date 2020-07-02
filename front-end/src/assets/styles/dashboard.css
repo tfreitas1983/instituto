@@ -1,3 +1,11 @@
 body{
     margin: 0;
 }
+
+.corpo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;    
+    width: 100vw; 
+}

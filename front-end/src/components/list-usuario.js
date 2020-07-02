@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import{ Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Header from './header'
 
 
 export default class Usuario extends Component {
@@ -11,14 +12,17 @@ export default class Usuario extends Component {
 
         return (
             <div>
-                <h1>
-                    Lista de Usuários
-                </h1>
+                <Header />
 
-                <button type="button">
-                    <Link to="/usuarios/adicionar" className="link">Cadastrar</Link>
-                </button>
+                <div className="corpo">
+                    <h1>
+                        Lista de Usuários
+                    </h1>
 
+                    <button type="button">
+                        <Link to="/usuarios/adicionar" className="link">Cadastrar</Link>
+                    </button>
+                </div>
             </div>
         )
     }

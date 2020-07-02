@@ -10,14 +10,14 @@ export default class Dashboard extends Component {
     render() {
 
         return (
-            <div>
-                
+            <div>                
                 <Header />
-                    
-                
-
-                <h1>Dashboard</h1>
-
+                <div className="corpo">
+                    <h1> Dashboard </h1>
+                    <div>
+                        Contadores
+                    </div>
+                </div>                
             </div>
         )
     }
