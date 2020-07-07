@@ -19,72 +19,76 @@ export default class AdicionarCurso extends Component {
         return (
             <div>
                 <Header />
-                <h1>
-                    Adicionar Curso
-                </h1>
-                <form>                
-                    <div className="logo" >
-                        <img src={curso} alt="Curso"  />
-                    </div>
-                    <div>
-                        <div className="col-6">
-                            <div className="row">
-                                <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
-                                    <div className="grupo">
-                                        <TiSortAlphabeticallyOutline />
-                                        <input name="curso" type="text" autoFocus placeholder="Nome do curso" autoComplete="off" />
-                                    </div>                            
-                                </IconContext.Provider>                  
+                <div className="corpo">
+                    <div className="title">
+                        <h1> 
+                            Adicionar Curso
+                        </h1>
+                    </div>                    
+                    <form>                
+                        <div className="logo" >
+                            <img src={curso} alt="Curso"  />
+                        </div>
+                        <div>
+                            <div className="col-6">
+                                <div className="row">
+                                    <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
+                                        <div className="grupo">
+                                            <TiSortAlphabeticallyOutline />
+                                            <input name="curso" type="text" autoFocus placeholder="Nome do curso" autoComplete="off" />
+                                        </div>                            
+                                    </IconContext.Provider>                  
+                                </div>
+
+                                <div className="row">
+                                    <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
+                                        <div className="grupo">
+                                            <GrNotes />
+                                            <textarea name="descricao">  Descrição </textarea>
+                                        </div>                            
+                                    </IconContext.Provider>                  
+                                </div> 
                             </div>
+                            <div className="col-6">
+                                <div className="row">
+                                    <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
+                                        <div className="grupo">
+                                            <GrSchedule />
+                                            <input name="duracao" type="text" placeholder="Duração total do curso" autoComplete="off" />
+                                        </div>                            
+                                    </IconContext.Provider>                  
+                                </div> 
 
-                            <div className="row">
-                                <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
-                                    <div className="grupo">
-                                        <GrNotes />
-                                        <textarea name="descricao">  Descrição </textarea>
-                                    </div>                            
-                                </IconContext.Provider>                  
-                            </div> 
-                        </div>
-                        <div className="col-6">
-                            <div className="row">
-                                <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
-                                    <div className="grupo">
-                                        <GrSchedule />
-                                        <input name="duracao" type="text" placeholder="Duração total do curso" autoComplete="off" />
-                                    </div>                            
-                                </IconContext.Provider>                  
-                            </div> 
+                                <div className="row">
+                                    <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
+                                        <div className="grupo">
+                                            <RiTimeLine />
+                                            <input name="aula" type="number" placeholder="Aulas em minutos" autoComplete="off" />
+                                        </div>                            
+                                    </IconContext.Provider>                  
+                                </div> 
 
-                            <div className="row">
-                                <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
-                                    <div className="grupo">
-                                        <RiTimeLine />
-                                        <input name="aula" type="number" placeholder="Aulas em minutos" autoComplete="off" />
-                                    </div>                            
-                                </IconContext.Provider>                  
-                            </div> 
-
-                            <div className="row">
-                                <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
-                                    <div className="grupo">
-                                        <RiBuilding4Line />
-                                        <input className="unidade" type="text" placeholder="Unidades" autoComplete="off" multiple />
-                                    </div>                            
-                                </IconContext.Provider>                  
-                            </div>                                       
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="button">
-                                <button type="button">
-                                    <Link to="/cursos" className="link">Salvar</Link>
-                                </button>
+                                <div className="row">
+                                    <IconContext.Provider value={{ size: "3em", className: "global-class-name" }}>
+                                        <div className="grupo">
+                                            <RiBuilding4Line />
+                                            <input className="unidade" type="text" placeholder="Unidades" autoComplete="off" multiple />
+                                        </div>                            
+                                    </IconContext.Provider>                  
+                                </div>                                       
                             </div>
                         </div>
-                    </div>
-                </form>       
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="button">
+                                    <button type="button">
+                                        <Link to="/cursos" className="link">Salvar</Link>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>       
             </div>
         )
     }

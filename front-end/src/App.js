@@ -29,6 +29,8 @@ import Servico from "./components/list-servico"
 import AdicionarServico from "./components/add-servico"
 import EditarServico from "./components/edit-servico"
 
+import AgendaInstrutor from "./components/add-agenda-instrutor"
+
 
 class App extends Component {
   render() {
@@ -58,6 +60,10 @@ class App extends Component {
               <Route exact path="/servicos" component={Servico} />
               <Route exact path="/servicos/adicionar" component={AdicionarServico} />
               <Route exact path="/servicos/:id" component={EditarServico} />
+
+              <Route exact path="/agendas/instrutores/:id" component={AgendaInstrutor} />
+
+
               
             </Switch>
           </div>
